@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>games</h1>
+  <button class="btn btn-primary" routerLink="/games/addgame">Add Game</button>
+
+
+  <table class="table table-hover  table-striped">
+    <tr>
+      <th>Titel</th>
+      <th>Bescrijving</th>
+      <th>Detail pagina</th>
+    </tr>
+    <tr *ngFor="let game of games">
+      <td>{{game.title}}</td>
+      <td>{{game.beschrijving}}</td>
+      <td><button class="btn btn-primary" routerLink="/games/{{game.title}}">detail</button></td>
+  </table>
+
+
+</div>
