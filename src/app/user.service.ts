@@ -13,8 +13,8 @@ const httpOptions = {
 export class UserService {
   constructor(private http: HttpClient) { }
 
-  private userUrl = 'http://localhost:3000/api/users'
-  private loginUrl = 'http://localhost:3000/api/login'
+  private userUrl = 'https://gameinfoapi.herokuapp.com/api/users'
+  private loginUrl = 'https://gameinfoapi.herokuapp.com/api/login'
 
 
 

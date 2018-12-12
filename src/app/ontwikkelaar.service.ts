@@ -12,7 +12,7 @@ const httpOptions = {
 export class OntwikkelaarService {
 
   constructor(private http: HttpClient) { }
-  private ontwikkerlaarsUrl = 'http://localhost:3000/api/ontwikkelaars'
+  private ontwikkerlaarsUrl = 'https://gameinfoapi.herokuapp.com/api/ontwikkelaars'
 
   getOntwikkelaars(): Observable<Ontwikkelaar[]> {
     return this.http.get<Ontwikkelaar[]>(this.ontwikkerlaarsUrl)

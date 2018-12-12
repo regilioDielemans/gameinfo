@@ -14,7 +14,7 @@ let httpOptions = {
 export class GameService {
 
   constructor( private http: HttpClient) { }
-  private gameUrl = 'http://localhost:3000/api/games';  // URL to web api
+  private gameUrl = 'https://gameinfoapi.herokuapp.com/api/games';  // URL to web api
 
 
   getGames (): Observable<Game[]> {
