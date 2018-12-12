@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { AddGameComponent } from './games/add-game/add-game.component';
 import { AddOntwikkelaarComponent } from './ontwikkelaars/add-ontwikkelaar/add-ontwikkelaar.component';
 import { GameDetailComponent } from './games/game-detail/game-detail.component';
+import { OntwikkelaarDetailComponent } from './ontwikkelaars/ontwikkelaar-detail/ontwikkelaar-detail.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { GameDetailComponent } from './games/game-detail/game-detail.component';
     AddGameComponent,
     AddOntwikkelaarComponent,
     GameDetailComponent,
+    OntwikkelaarDetailComponent,
     
   ],
   imports: [

@@ -6,14 +6,11 @@
     <table class="table table-hover  table-striped">
       <tr>
         <th>Title</th>
-        
+        <th>Detail pagina</th>
       </tr>
       <tr *ngFor="let ontwikkelaar of ontwikkelaars">
         <td>{{ontwikkelaar.Name}}</td>
-        
+        <td><button class="btn btn-primary" routerLink="/ontwikkelaar/{{ontwikkelaar.Name}}">detail</button></td>
     </table>
-  
-  
-  
-  </div>
+</div>
   

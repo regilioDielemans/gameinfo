@@ -17,6 +17,11 @@ export class OntwikkelaarService {
   getOntwikkelaars(): Observable<Ontwikkelaar[]> {
     return this.http.get<Ontwikkelaar[]>(this.ontwikkerlaarsUrl)
   }
+  getOntwikkelaarByName(name):Observable<Ontwikkelaar>{
+    console.log(name)
+    console.log(this.http.get<Ontwikkelaar>(`${this.ontwikkerlaarsUrl}?name=${name}`,httpOptions))
+    return this.http.get<Ontwikkelaar>(`${this.ontwikkerlaarsUrl}?name=${name}`,httpOptions)
+  }
 
   addOntwikkelaar(ontwikkelaar:Ontwikkelaar): Observable<any>{
     console.log(ontwikkelaar)
@@ -24,4 +29,5 @@ export class OntwikkelaarService {
     return this.http.post(this.ontwikkerlaarsUrl,ontwikkelaar,httpOptions)
 
   }
+
 }
